@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import { Badge } from '@material-ui/core'
 const Container = styled.div`
-    height:60px;
+    height:80px;
 `
 const SearchContainer = styled.div`
     border:1px solid lightgrey;
@@ -13,9 +13,11 @@ const SearchContainer = styled.div`
     padding:5px;
 `
 const Wrapper = styled.div`
-    padding: 10px 20px;
+    padding: 0px 20px;
     display:flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
 `
 const Language = styled.div`
     font-size:14;
@@ -62,8 +64,8 @@ const Navbar = () => {
                   <Logo>HAILE'S</Logo>
               </Center>
               <Right>
-                  <MenuItem>Login</MenuItem>
-                  <MenuItem>Register</MenuItem>
+                  <MenuItem>LOGIN</MenuItem>
+                  <MenuItem>REGISTER</MenuItem>
                   <MenuItem>                   
                       <Badge badgeContent={1} color="primary">
                         <ShoppingCartOutlined/>
