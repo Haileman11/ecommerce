@@ -9,6 +9,7 @@ const Container = styled.div`
     display:flex;
     background-color:ffafaf;
     position:relative;
+    overflow: hidden;
 `
 const Arrow = styled.div`
     width:50px;
@@ -76,7 +77,7 @@ const Slider = () => {
         }
     }
     return <Container>
-        <Arrow direction="left">
+        <Arrow direction="left" onClick={()=>handleSlide("left")}>
             <ArrowLeftOutlined/>
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
